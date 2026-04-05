@@ -22,13 +22,13 @@ if([SessionTypeName] = 'Qualifying 3', '  Q3   | POS |R.TIME',
 
 //Añadir un espacio en blanco de 8.
 
-//#region calcular posición
+//#region calcular posición (properties: display length 5 / Right align)
 format([Position], 0) + '/' + format([OpponentsCount], 0)
 // #endregion
 
 //Añadir un espacio en blanco de 1.
 
-//#region calcular el numero de vuelta
+//#region calcular el numero de vuelta (properties: display length 5 / Right align)
 if([DataCorePlugin.GameData.NewData.SessionTypeName] = 'Practice 1' || 
 [DataCorePlugin.GameData.NewData.SessionTypeName] = 'Practice 2' ||
 [DataCorePlugin.GameData.NewData.SessionTypeName] = 'Practice 3' ||
@@ -59,7 +59,7 @@ if([GameRawData.PlayerCarStatusData.m_ersDeployMode] = 3, ' ERS: 3 OVERTAKE  ',
 ' 0       ERS      100')))))
 // #endregion
 
-// Llamar a la propiedad ERSPercent
+// Llamar a la propiedad ERSPercent (properties: display length 3 / Right align)
 
 //#region Barra de ERS
 var ersPercent = $prop('ERSPercent');
