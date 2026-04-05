@@ -1,9 +1,10 @@
 /**
  * @layout LCD_20x4_Posiciones
- * @version 2.0.0-beta
+ * @version 2
  * @component Linea_2
- * @build 20260404.01
  * @description Muestra los datos del líder.
+ * @build 2
+ * @update 2024-04-04
  */
 
 //Datos del Piloto

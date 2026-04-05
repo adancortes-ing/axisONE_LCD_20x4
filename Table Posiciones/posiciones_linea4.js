@@ -1,9 +1,10 @@
 /**
  * @layout LCD_20x4_Posiciones
- * @version 2.0.0-beta
+ * @version 2
  * @component Linea_4
- * @build 20260404.01
  * @description Muestra los datos del piloto detrás.
+ * @build 3
+ * @update 2024-04-04
  */
 
 //Datos de la sesión
