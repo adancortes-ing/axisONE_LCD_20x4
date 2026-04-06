@@ -8,7 +8,7 @@
  */
 
 //#region ANUNCIO
-⇿        F1        ⇿⇿     --------     ⇿⇿       MAIN       ⇿⇿      SCREEN      ⇿
+⇿        F1        ⇿⇿    ----------    ⇿⇿       MAIN       ⇿⇿      SCREEN      ⇿
 // #endregion
 
 //#region Calcular posicion (properties: Display length: 4)
