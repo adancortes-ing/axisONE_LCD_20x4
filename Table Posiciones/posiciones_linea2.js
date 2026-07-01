@@ -18,7 +18,7 @@ let posicion = $prop("Position");
 let tiempo = $prop("GarySwallowDataPlugin.Leaderboard.Position01.BestLap") * 1000;
 let gapFormat;
 let formatoTiempo = '-:--.---';
-let linea;
+let tiempoDelante;
 
 if (sesion.includes('Practice') || sesion.includes('Qualifiying') || sesion.includes('QUALIFY') || sesion.includes('PRACTICE')) {
 
@@ -34,17 +34,17 @@ if (sesion.includes('Practice') || sesion.includes('Qualifiying') || sesion.incl
         formatoTiempo = mm + ':' + ss + '.' + fff;
     }
     formatoTiempo = formatoTiempo.substring(0, 8);
-    linea = '1  ' + nombre.padEnd(8, ' ') + ' ' + formatoTiempo;
+    tiempoDelante = '1  ' + nombre.padEnd(8, ' ') + ' ' + formatoTiempo;
 } else {
     let gapLider = $prop('GarySwallowDataPlugin.Leaderboard.Position' + posicion.toString().padStart(2, '0') + '.GapToFirstDelayed');
 
     if (gapLider > 0) {
         gapFormat = '-' + format(gapLider, '0.000');
         gapFormat = gapFormat.padEnd(7, ' ');
-        linea = '1  ' + nombre.padEnd(8, ' ') + '  ' + gapFormat;
+        tiempoDelante = '1  ' + nombre.padEnd(8, ' ') + '  ' + gapFormat;
     } else {
-        linea = '1  ' + nombre.padEnd(8, ' ') + ' '.repeat(9);
+        tiempoDelante = '1  ' + nombre.padEnd(8, ' ') + ' '.repeat(9);
     }
 }
 
-return linea;
+return tiempoDelante;
